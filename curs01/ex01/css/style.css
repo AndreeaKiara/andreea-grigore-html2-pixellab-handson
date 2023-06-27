@@ -101,3 +101,23 @@ body > h1 {
     display: block;
   }
 }
+
+body > h2 {
+  display: none;
+}
+
+@media (min-width: 500px) and (max-width: 1000px) {
+  body > h2 {
+    display: block;
+  }
+}
+
+body > h3 {
+  display: none; /* Pixeltab s-a inverzit doar dupa ce am pus aici none */
+}
+
+@media (min-width: 1200px) {
+  body > h3 {
+    display: none;
+  }
+}

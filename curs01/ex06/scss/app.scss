@@ -34,3 +34,51 @@
 .square-purple {
   @include squareBg(purple);
 }
+
+.circles {
+  width: 75%;
+  border: 2px dotted brown;
+  border-radius: 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin circle() {
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid red;
+  background: purple;
+}
+
+@mixin circleBg($color: pink) {
+  background: $color;
+}
+
+@mixin circle-border($width, $style: solid, $color) {
+  border-width: $width;
+  border-style: $style;
+  border-color: $color;
+}
+
+.circle {
+  @include circle();
+}
+
+.circle-red {
+  @include circleBg(red);
+}
+
+.circle-green {
+  @include circleBg(green);
+}
+
+.circle-blue {
+  @include circleBg(blue);
+}
+
+.circle-border-blue {
+  @include circle-border(2px, solid, blue);
+}

@@ -27,4 +27,40 @@
   background: purple;
 }
 
+.circles {
+  width: 75%;
+  border: 2px dotted brown;
+  border-radius: 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.circle {
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid red;
+  background: purple;
+}
+
+.circle-red {
+  background: red;
+}
+
+.circle-green {
+  background: green;
+}
+
+.circle-blue {
+  background: blue;
+}
+
+.circle-border-blue {
+  border-width: 2px;
+  border-style: solid;
+  border-color: blue;
+}
+
 /*# sourceMappingURL=style.css.map */
