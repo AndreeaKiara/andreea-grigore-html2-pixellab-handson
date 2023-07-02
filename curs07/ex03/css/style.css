@@ -66,3 +66,34 @@
     transform: translateY(-10px);
   }
 }
+
+.animation03 {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loader-x {
+  display: flex;
+  gap: 5px;
+}
+
+.loader-x span {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: black;
+  animation: sway 1.2s linear infinite alternate;
+}
+
+@keyframes sway {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-10px);
+  }
+}
